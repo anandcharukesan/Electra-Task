@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Avenir:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+
+
+.image-flow-wrapper {
+    margin: 50px auto 50px auto;
+    width: 1300px;
+    font-family: 'Montserrat';
+  }
+  
+  .image-flow-container {
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--imgFlowBg); 
+    height: 400px;
+    width: 100%; 
+    overflow: hidden; 
+    position: relative; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+
+  .divider {
+    border: none; 
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 10px 0; 
+    width: 50px; 
+  }
+  
+  .image-container {
+    border-radius: 12px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    height: 100%; 
+    width: auto; 
+    margin-right: 10px; 
+    animation: scroll 25s linear infinite; 
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+  
+  .text-content {
+    color: white; 
+    padding: 20px; 
+    padding-left: 50px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+  }
+  
+
+  .ourPortfolio{
+    font-size: 34px; 
+    margin-bottom: 0; 
+    color: var(--navButtonBg);
+    font-family: "Avenir";
+    margin-top: 0;
+    font-weight: 300;
+  }
+
+  .ourPortfolio .port{
+    color: var(--port );
+  }
+
+  .title {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+    color: var(--navBg);
+    font-family: "Avenir";
+    font-weight: 300;
+    color: var(--title);
+  }
+  
+
+  .HaveALook {
+    font-size: 21px; 
+    margin-bottom: 10px; 
+    color: var(--navBg);
+    font-family: "Avenir";
+    font-weight: 300;
+    color: var(--navBg);
+  }
+  
+  .text-content .content {
+    font-size: 15px; 
+    line-height: 1.5; 
+    color: var(--navBg);
+  }
+
+
+  .exploreBtn {
+    border: 1px solid var(--navButtonBg);
+    background-color: #F1761D;
+    color: white;
+    padding: 8px 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: fit-content;
+    font-weight: 450;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  

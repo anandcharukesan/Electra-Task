@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+.tube {
+    position: absolute;
+    background-color: var(--navBg);
+    height: 210px;
+    width: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 500px 0 0 500px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.tube:nth-child(4) {
+    background-color: var(--navButtonBg);
+}
+
+.tube:nth-child(4):hover {
+    background-color: #FFFFFF;
+}
+
+.tube.clicked {
+    transform: translateX(10px);
+}
+
+.tube.clicked + .tube {
+    transform: translateX(-10px);
+}
+
+.hidden-tube {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 210px;
+    width: 350px;
+    background-color: var(--hiddentube);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 500px 0 0 500px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.tube:hover .hidden-tube {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden-tube-image {
+    width: 130px;
+    height: 130px;
+    margin: 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.tube:hover .hidden-tube {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tubeName, .hidden-tube-name {
+    font-size: 21px;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.tubeNumber {
+    font-size: 100px;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.03);
+}
+
+.tube:hover {
+    transform: translateX(5px);
+}
+
+.tube:hover .hidden-tube {
+    transform: translateY(0) translateX(5px);
+}
+
+.tube:hover {
+    margin-right: 10px;
+}
